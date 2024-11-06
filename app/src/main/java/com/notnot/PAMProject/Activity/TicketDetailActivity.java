@@ -42,7 +42,7 @@ public class TicketDetailActivity extends BaseActivity {
         binding.seatsTxt.setText(flight.getPassenger());
         binding.logo.setText(flight.getAirlineName());
 
-        binding.downloadTicketBtn.setOnClickListener(v -> {
+        binding.homeBtn.setOnClickListener(v -> {
             Intent intent = new Intent(TicketDetailActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
